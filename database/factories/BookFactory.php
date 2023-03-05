@@ -13,13 +13,13 @@ class BookFactory extends Factory
     public function definition()
     {
         return [
-			'name' => $this->faker->name,
-			'author' => $this->faker->name,
-			'genre' => $this->faker->name,
-			'sinopsis' => $this->faker->name,
-			'restriction' => $this->faker->name,
-			'main' => $this->faker->name,
-			'secondary' => $this->faker->name,
+			'name' => fake()->name(),
+			'author' => fake()->name(),
+			'genre' => fake()->name(),
+			'sinopsis' => fake()->name(),
+			'restriction' => 18,
+			'main' => fake()->name(),
+			'secondary' => fake()->name(),
         ];
     }
 }

@@ -11,7 +11,7 @@ class ApiController extends Controller
         return Book::select('*')->get();
     }
 
-    public function create() {
+    public function create(Request $request) {
         $this->validate($request, [ //inputs are not empty or null
 
             'name' => 'required',
